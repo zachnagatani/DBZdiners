@@ -11,7 +11,7 @@
 				})
 				.state('restaurant', {
 					url: '/restaurant',
-					templateUrl: 'templates/home.html',
+					templateUrl: 'templates/restaurant.html',
 					controller: 'homeCtrl'
 				});
 			$urlRouterProvider

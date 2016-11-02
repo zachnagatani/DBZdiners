@@ -1,12 +1,46 @@
+// Variables
 $icon-font-path: '../fonts/';
 
+// Color
+$primary-color: #3F51B5;
+$dark-primary-color: #303F9F;
+$light-primary-color: #C5CAE9;
+$accent-color: #FFC107;
+
+// Typography
+$primary-text: #212121;
+$secondary-text: #757575;
+$light-text: #FFFFFF;
+
+// Dividers
+$divider-color: #BDBDBD;
+
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "components/variables.scss";
-@import "components/global.scss";
-@import "components/typography.scss";
-@import "components/color.scss";
-@import "components/navbar.scss";
-@import "components/buttons.scss";
-@import "components/forms.scss";
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 // endbower
+
+// Global
+html, body {
+	height: 100%;
+}
+
+body {
+	color: $primary-text;
+}
+
+main {
+	margin: 60px 0 0 0;
+}
+
+// Header
+.filter {
+	margin: 60px 0 0 0;
+}
+
+// Buttons
+.btn--search {
+	margin-bottom: 60px;
+}
+
+// Templates
+// -- Home
