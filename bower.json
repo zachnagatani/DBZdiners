@@ -2,7 +2,10 @@
   "name": "dbzdiners",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5"
+    "bootstrap-sass": "~3.3.5",
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-animate": "^1.5.8"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -14,7 +17,6 @@
     }
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.1.2"
+    "angular-mocks": "^1.5.8"
   }
 }
