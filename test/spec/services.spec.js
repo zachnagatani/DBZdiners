@@ -3,7 +3,7 @@
 
 	describe('The api calls service', function() {
 		var apiCalls;
-		var URL = '/data.json';
+		var URL = '/app/data.json';
 		var badURL= '/dataasdfasf.json';
 
 		beforeEach(module('dbz'));
