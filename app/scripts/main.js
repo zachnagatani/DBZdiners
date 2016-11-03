@@ -10,9 +10,13 @@
 					controller: 'homeCtrl'
 				})
 				.state('restaurant', {
-					url: '/restaurant',
+					url: '/restaurant/:name',
 					templateUrl: 'templates/restaurant.html',
-					controller: 'homeCtrl'
+					controller: 'restaurantCtrl',
+					params: {
+						diner: null,
+						dinerSnapshot: null
+					}
 				});
 			$urlRouterProvider
 				.otherwise('/home');

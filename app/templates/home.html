@@ -22,14 +22,14 @@
 					<div class="col-md-3 col-md-offset-3">
 						<div class="form-group">
 							<label for="type">Type</label><br>
-							<input type="text" name="type" id="type" class="form-control">
+							<input type="text" name="type" id="type" class="form-control" ng-model="typeFilter.type">
 						</div>
 					</div>
 
 					<div class="col-md-3">
 						<div class="form-group">
 							<label for="diner-name">Name</label><br>
-							<input type="text" name="diner-name" id="diner-name" class="form-control">
+							<input type="text" name="diner-name" id="diner-name" class="form-control" ng-model="nameFilter.name">
 						</div>
 					</div>
 				</form>		
@@ -39,18 +39,13 @@
 
 	<main>
 		<div class="row text-center">
-			<figure class="col-md-4">
-				<img src="images/frieza.jpg" alt="" class="img-responsive">
-				<figcaption><a href="">Frieza's Wide-Open Fridge</a></figcaption>
-			</figure>
-			<figure class="col-md-4">
-				<img src="images/saiyans.jpg" alt="" class="img-responsive">
-				<figcaption><a href="">Saiyan Soup and Salad</a></figcaption>
-			</figure>
-			<figure class="col-md-4">
-				<img src="images/humans.png" alt="" class="img-responsive">
-				<figcaption><a href="">Yajirobe's Yummy Yearnings</a></figcaption>
-			</figure>
+			<div ng-repeat="diner in diners | filter: typeFilter | filter: nameFilter">
+				<div class="clearfix" ng-if="$index % 3 === 0"></div>
+				<figure class="col-md-4">
+					<img src="{{ diner.photo.src }}" alt="{{ diner.photo.alt }}" class="img-responsive">
+					<figcaption><a href="#/home" ng-click="goToDiner(diner)">{{ diner.name }}</a></figcaption>
+				</figure>
+			</div>
 		</div>
 	</main>
 </div>

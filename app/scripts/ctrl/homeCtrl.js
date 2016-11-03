@@ -15,5 +15,12 @@
 			};
 
 			self.init();
+
+			$scope.goToDiner = function(diner) {
+					$state.go('restaurant', {
+						name: diner.name,
+						diner: diner
+					});
+			};
 		}]);
 }());
