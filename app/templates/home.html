@@ -1,18 +1,17 @@
 <div class="container">
 	<header>
 		<h1 class="text-center">Dragon Ball Z Diners</h1>
-
-		<section class="filter">
-			<div class="row">
-				<div class="col-md-4 col-md-offset-4">
-					<button class="btn btn-default btn-block btn--search">Search Restaurants</button>
-				</div>
+		
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<button class="btn btn-default btn-block btn--search" ng-click="toggleFilter()">Filter Restaurants</button>
 			</div>
-
+		</div>
+		<section class="filter" ng-show="filter">
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4">
 					<p class="lead text-center">
-						Search Restaurants by...
+						Filter Restaurants by...
 					</p>
 				</div>
 			</div>

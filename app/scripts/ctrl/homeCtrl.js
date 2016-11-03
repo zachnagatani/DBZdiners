@@ -22,5 +22,11 @@
 						diner: diner
 					});
 			};
+
+			$scope.filter = false;
+
+			$scope.toggleFilter = function() {
+				$scope.filter === false ? $scope.filter = true : $scope.filter = false;
+			};
 		}]);
 }());

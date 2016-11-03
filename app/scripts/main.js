@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-	angular.module('dbz', ['ui.router', 'ngAnimate'])
+	angular.module('dbz', ['ui.router', 'ngAnimate', 'ngMessages'])
 		.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 			$stateProvider
 				.state('home', {
