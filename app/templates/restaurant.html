@@ -50,7 +50,7 @@
 								<div class="form-group">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" class="form-control" ng-model="review.name">
-									<div ng-show="reviewForm.name.$touched && reviewForm.name.$error" class="text-danger">POOP</div>
+									<div ng-show="reviewForm.name.$touched && reviewForm.name.$error" class="text-danger	">POOP</div>
 								</div>
 
 								<div class="form-group">
@@ -59,8 +59,24 @@
 								</div>
 
 								<div class="form-group">
-									<label for="rating">Rating</label>
-									<input type="text" name="rating" id="rating" class="form-control" ng-model="review.rating">
+									<label for="">Rating</label>
+									<div class="rating">
+									  <div class="dragonball" ng-click="hoverStyles($event)">
+									    <span class="star">&#9733;</span>
+									  </div>
+									  <div class="dragonball" ng-click="hoverStyles($event)">
+									    <span class="star">&#9733;</span>
+									  </div>
+									  <div class="dragonball" ng-click="hoverStyles($event)">
+									    <span class="star">&#9733;</span>
+									  </div>
+									  <div class="dragonball" ng-click="hoverStyles($event)">
+									    <span class="star">&#9733;</span>
+									  </div>
+									  <div class="dragonball" ng-click="hoverStyles($event)">
+									    <span class="star">&#9733;</span>
+									  </div>
+									</div>
 								</div>
 
 								<div class="form-group">
